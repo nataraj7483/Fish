@@ -18,7 +18,7 @@ public class Person {
 		System.out.println(this.name);
 		for (int i = 0; i < email.length; i++) {
 			Email names=this.email[i];
-			System.out.println(names);
+			//System.out.println(names);
 			if(names!=null) {
 				names.showOff();
 				

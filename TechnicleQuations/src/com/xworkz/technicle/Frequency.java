@@ -11,6 +11,7 @@ public class Frequency {
         //Converts given string into character array  
         char string[] = str.toCharArray();  
           
+        
         for(i = 0; i <str.length(); i++) {  
             freq[i] = 0; 
         }

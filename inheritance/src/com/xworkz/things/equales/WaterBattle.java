@@ -97,7 +97,10 @@ public class WaterBattle {
 		if(object instanceof WaterBattle) {
 			WaterBattle waterBattle=(WaterBattle) object;
 			
-			if(this.brand.equals(waterBattle.brand)&&this.color.equals(waterBattle.color)&&this.type.equals(waterBattle.type)) {
+			if(this.brand.equals(waterBattle.brand)
+					&&this.color.equals(waterBattle.color)
+					&&this.type.equals(waterBattle.type)
+					) {
 				return true;
 			}
 		}else {

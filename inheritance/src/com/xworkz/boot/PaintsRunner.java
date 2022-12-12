@@ -12,7 +12,7 @@ public class PaintsRunner {
 	    
 	    Paints paint1=new Paints("Nippon paint","Acrylic paint","Dulux","White","Vitreous paint",350,10,true,2022-7-8,2023-3-6);
 	    System.out.println(paint1);
-	    paint=paint1;
+	  //  paint=paint1;
 	    
 	    boolean abcd=paint.equals(paint1);
 	    System.out.println(abcd);

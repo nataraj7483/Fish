@@ -40,13 +40,13 @@ public class IplRunner {
 	  IplDTO delhi=new IplDTO();
 	  System.out.println("//////////////////////////");
 	  
-	  delhi.setTeamName("Dlhi Capitals");
+	  delhi.setTeamName("Delhi Capitals");
 	  delhi.setCaptainName("Panth");
 	  delhi.setOwnerAlive(true);
 	  delhi.setPurse(19);
 	  delhi.setWins(190);
 	  delhi.setDefeats(167);
-	  delhi.setCreatedBy("Raj");
+	  delhi.setCreatedBy("NTRJ");
 	  delhi.setCreatedDate(LocalDateTime.now());
 	    
 		repository.create(delhi);

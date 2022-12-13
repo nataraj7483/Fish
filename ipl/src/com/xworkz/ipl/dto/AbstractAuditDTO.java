@@ -14,6 +14,12 @@ public abstract class AbstractAuditDTO implements Serializable{
 		System.out.println("Calling no-arg const of AbstractAuditDTO");
 	}
 
+	@Override
+	public String toString() {
+		return "AbstractAuditDTO [createdBy=" + createdBy + ", createdDate=" + createdDate + ", updatedBy=" + updatedBy
+				+ ", updatedDate=" + updatedDate + "]";
+	}
+
 	public String getCreatedBy() {
 		return createdBy;
 	}

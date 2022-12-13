@@ -14,6 +14,12 @@ public class IplDTO extends AbstractAuditDTO{
 		System.out.println("calling no arguments constant of ipl");
 	}
 
+	//@Override
+	//public String toString() {
+		//return "IplDTO [teamName=" + teamName + ", captainName=" + captainName + ", ownerAlive=" + ownerAlive
+				//+ ", purse=" + purse + ", wins=" + wins + ", defeats=" + defeats + "]";
+	//}
+
 	@Override
 	public String toString() {
 		return "IplDTO [teamName=" + teamName + ", captainName=" + captainName + ", ownerAlive=" + ownerAlive

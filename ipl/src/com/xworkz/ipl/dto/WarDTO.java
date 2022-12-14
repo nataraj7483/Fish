@@ -1,5 +1,7 @@
 package com.xworkz.ipl.dto;
 
+import java.time.LocalDateTime;
+
 public class WarDTO extends AbstractAuditDTO{
 	
 	private String name;
@@ -9,7 +11,8 @@ public class WarDTO extends AbstractAuditDTO{
 	private String startedWith;
 	private String wonBy;
 	private int noOfDeaths;
-    
+	private LocalDateTime started;
+	private LocalDateTime ended;
 	
 	
 	
@@ -24,8 +27,8 @@ public class WarDTO extends AbstractAuditDTO{
 	@Override
 	public String toString() {
 		return "WarDTO [name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", startedBy=" + startedBy
-				+ ", startedWith=" + startedWith + ", wonBy=" + wonBy + ", noOfDeaths=" + noOfDeaths + ", toString()="
-				+ super.toString() + "]";
+				+ ", startedWith=" + startedWith + ", wonBy=" + wonBy + ", noOfDeaths=" + noOfDeaths + ", started="
+				+ started + ", ended=" + ended + ", toString()=" + super.toString() + "]";
 	}
 
 
@@ -96,6 +99,26 @@ public class WarDTO extends AbstractAuditDTO{
 
 	public void setNoOfDeaths(int noOfDeaths) {
 		this.noOfDeaths = noOfDeaths;
+	}
+
+
+	public LocalDateTime getStarted() {
+		return started;
+	}
+
+
+	public void setStarted(LocalDateTime started) {
+		this.started = started;
+	}
+
+
+	public LocalDateTime getEnded() {
+		return ended;
+	}
+
+
+	public void setEnded(LocalDateTime ended) {
+		this.ended = ended;
 	}
 
 }

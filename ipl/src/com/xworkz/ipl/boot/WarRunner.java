@@ -23,7 +23,7 @@ public class WarRunner {
 	
 		warRepositiry.Create(warDTO);
 		
-		warRepositiry.tempWar("India");
+		warRepositiry.findStartedBy("Pakistan");
 		
 	}
 

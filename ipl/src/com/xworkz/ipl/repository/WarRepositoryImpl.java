@@ -1,6 +1,7 @@
 package com.xworkz.ipl.repository;
 
 import com.xworkz.ipl.dto.WarDTO;
+import com.xworkz.ipl.exception.ArrayisfullnowDontAddMore;
 
 
 public class WarRepositoryImpl implements WarRepository{
@@ -13,29 +14,29 @@ public class WarRepositoryImpl implements WarRepository{
 		System.out.println("running create of WarDTO"+warDTO);
 		if(this.currentIndex>=warDto.length) {
 			System.err.println("size exceeded cannot add more War");
+			throw new ArrayisfullnowDontAddMore();
 			
 		}
 		this.warDto[this.currentIndex]=warDTO;
-		System.out.println("save"+warDto.toString()+"in index"+this.currentIndex);
+		System.out.println("save"+"in index"+this.currentIndex);
 		this.currentIndex++;
 		return false;
 		
 	}
 	@Override
-	public WarDTO tempWar(String tempWarName) {
+	public WarDTO findStartedBy(String tempWarName) {
 		for(WarDTO warDTO :warDto) {
-			String tempName=warDTO.getCreatedBy();
-			if(warDTO!=null&& tempName.equals(tempWarName)) {
+			
+			if(warDTO!=null&& warDTO.getStartedBy().equals(tempWarName)) {
 				
 				System.out.println(tempWarName);
     			System.out.println("The following the properties are match");
     			System.out.println(warDTO);
-    			return warDTO;
 			}
 		
 			
 		}
-		return WarRepository.super.tempWar(tempWarName);
+		return WarRepository.super.findStartedBy(tempWarName);
 	}
 	
 

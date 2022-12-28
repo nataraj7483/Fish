@@ -67,7 +67,7 @@ public class SanitizerRunner {
 		while(itr5.hasNext()) {
 			SanitizerDTO element = itr5.next();
 			if(element.getPrice()>700) {
-				System.out.println("Maximum price os sanitizer:"+element);
+				System.out.println("Maximum price of sanitizer:"+element);
 			}
 		}
 		Iterator<SanitizerDTO> itr6 = collections.iterator();

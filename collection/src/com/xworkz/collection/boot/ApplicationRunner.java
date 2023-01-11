@@ -15,7 +15,7 @@ public class ApplicationRunner {
 		applicationDTO.add(new ApplicationDTO("Cloud Applications", 4.2, false, "Raj", 11000));
 		applicationDTO.add(new ApplicationDTO("Web Applications", 2.0, false, "Raj", 12000));
 		applicationDTO.add(new ApplicationDTO("Mobile Applications", 3.3, false, "Raj", 13000));
-	
+	                                                                                                                                                                                                                                              
 		applicationDTO
 		.stream()
 		.filter(dto -> dto.isFree() && "google".contains(dto.getDevelopedBy()))

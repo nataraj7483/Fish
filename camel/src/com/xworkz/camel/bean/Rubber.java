@@ -17,7 +17,7 @@ public class Rubber {
 	@Qualifier("rubberColor")
 	private String color;
 	@Autowired
-	@Qualifier("size")
+	@Qualifier("rubberSize")
 	private int size;
 	@Autowired
 	@Qualifier("rubberPrice")

@@ -22,7 +22,7 @@ public class AllRunner {
 		System.out.println(ref2);
 		SoftwareEngineer ref3 = container.getBean("engineer", SoftwareEngineer.class);
 		System.out.println(ref3);
-		Pencil ref4 = container.getBean("pencil", Pencil.class);
+		Pencil ref4 = container.getBean("ram", Pencil.class);
 		System.out.println(ref4);
 		Rubber ref5 = container.getBean("rubber", Rubber.class);
 		System.out.println(ref5);

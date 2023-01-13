@@ -109,13 +109,6 @@ public class HardwareConfiguration {
 	}
 	
 	@Bean
-	public Pencil pencil()
-	{
-		Pencil ref=new Pencil();
-		
-		return ref;
-	}
-	@Bean
 	public String pencilName() {
 
 		return "NTRJ";
@@ -131,7 +124,7 @@ public class HardwareConfiguration {
 		return 16.0;
 	}
 	@Bean
-	public String colour() {
+	public String pecilColor() {
 
 		return "black";
 	}
@@ -186,7 +179,7 @@ public class HardwareConfiguration {
 		return true;
 	}
 	@Bean
-	public char size() {
+	public char rubberSize() {
 
 		return 'S';
 	}

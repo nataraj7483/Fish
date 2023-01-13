@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component()
 public class Pencil {
 	
 	@Autowired
@@ -17,7 +17,7 @@ public class Pencil {
 	@Qualifier("price")
 	private double price;
 	@Autowired
-	@Qualifier("color")
+	@Qualifier("pecilColor")
 	private String color;
 	@Autowired
 	@Qualifier("sharp")

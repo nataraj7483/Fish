@@ -27,7 +27,7 @@ public class TerroristDTO extends AbstractAuditDTO{
 	@Size(min = 5 ,max = 18,message = "Name is invalid it should contain min 5 and max 18 letters")
 	private String name;
 	@NonNull
-	@Min (value = 3,message = "Age should be greater than 3 or less than 50")
+	@Min (value = 6,message = "Age should be greater than 3 or less than 50")
 	@Max(value = 50,message = "Age should be greater than 3 or less than 50")
 	private int age;
 	@NotNull(message = "Country should not null fill country name there")

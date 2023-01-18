@@ -12,8 +12,8 @@ public class TerroristRunner {
 
 		TerroristDTO dto = new TerroristDTO();
 		dto.setName("Manu S P Gowda");
-		dto.setAge(24);
-		dto.setCountry("Uganda");
+		dto.setAge(4);
+		dto.setCountry("Ug");
 		dto.setAlive(true);
 	   dto.setOrganization("Akshay");
 	   dto.setPrison(true);

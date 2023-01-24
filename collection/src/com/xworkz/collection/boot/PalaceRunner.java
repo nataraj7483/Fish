@@ -2,6 +2,7 @@ package com.xworkz.collection.boot;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.xworkz.collection.dto.PalaceDTO;
@@ -19,6 +20,7 @@ public class PalaceRunner {
 		palaceDTO.stream().filter(dto->!dto.isDestroyed())
 		.collect(Collectors.toSet())
 		.forEach(dto->System.out.println(dto));
+		
 		
 	}
 

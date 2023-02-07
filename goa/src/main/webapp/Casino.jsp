@@ -51,7 +51,7 @@
 				<label for="exampleFormControlInput1" class="form-label">
 				Cruise</label> <input type="text" class="form-control"
 					id="exampleFormControlInput1" placeholder="Enter Cruise"
-					name="cruise">
+					name="casino">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">

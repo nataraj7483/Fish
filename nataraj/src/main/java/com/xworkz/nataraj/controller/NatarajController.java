@@ -33,11 +33,11 @@ public class NatarajController {
 		return "index.jsp";
 	}
 
-	@GetMapping("/mobile")
+	@GetMapping("/nataraj")
 
 	public String onMobile(Model model) {
 
-		model.addAttribute("mobile", "vivo");
+		model.addAttribute("nataraj", "vivo");
 
 		return "index.jsp";
 	}
@@ -142,7 +142,7 @@ public class NatarajController {
 	public String onMobileDTO(Model model) {
 
 		MobileDTO dto = new MobileDTO("Oppo", "Oppo", 2022, "Indian", "2020-12-23");
-		model.addAttribute("mobile", dto);
+		model.addAttribute("mobiles", dto);
 
 		return "index.jsp";
 	}

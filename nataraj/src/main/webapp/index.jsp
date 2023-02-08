@@ -43,9 +43,9 @@
 	<input type="submit" value="Email" />		
 			</pre>
 	</form>
-	<form action="mobile" method="get">
+	<form action="nataraj" method="get">
 		<pre>
-	<label>Mobile is :${mobile}</label>		
+	<label>Mobile is :${nataraj}</label>		
 	<input type="submit" value="Mobile" />
 	</pre>
 	</form>
@@ -73,7 +73,7 @@
 	<form action="salary" method="get">
 		<pre>
 	<label>Salary is :${salary}</label>		
-	<input type="submit" value="date" />
+	<input type="submit" value="Salary" />
 	</pre>
 	</form>
 	<form action="best" method="get">
@@ -136,7 +136,7 @@
 	</form>
 
 	<form action="mobiles">
-		<input type="submit" value="mobile">
+		<input type="submit" value="mobiles">
 		<h6>name :${mobile.name}</h6>
 		<h6>company :${mobile.company}</h6>
 		<h6>releseYear :${mobile.releseYear}</h6>
